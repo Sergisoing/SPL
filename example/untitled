@@ -1,0 +1,13 @@
+<?php
+
+$id_arr = new ArrayIterator(1,2,3);
+$name_arr = new ArrayIterator('name1','name2', 'name3');
+$age_arr = new ArrayIterator('11', '22' ,'33');
+$mit = new MultipleIterator(MultipleIterator::MIT_KEYS_ASSOC);
+$mit->attach($id_arr, 'id');
+$mit->attach($name_arr, 'name');
+$mit->attach($age_arr, 'age');
+foreach ($mit as $key => $value) {
+    echo 'key: '. $key . 'value: '. $value . "\n";
+}
+
