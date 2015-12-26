@@ -33,7 +33,7 @@
     OuterIterator
         如果相对迭代器进行一定的处理之后在返回,实现该接口的类有IteratorIterator  直接extends 即可
     RecursiveIterator
-        可以对多层结构迭代器进行迭代
+        可以对多层结构迭代器进行迭代  
         如遍历文件夹，
         关键方法
             hasChildren
